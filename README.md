@@ -1,3 +1,6 @@
+
+---
+
 # Task Management Web
 
 ## Installation
@@ -8,10 +11,10 @@ $ npm install
 
 ## Getting Started
 
-First, run the development server:
+To start the development server, run the following command:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+After running the command, navigate to [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
