@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-setting {
+    @apply flex items-center  text-white font-medium text-xl w-full p-5 my-2 border-b-2 border-gray-400 border-opacity-25;
+  }
+}
+input[type='time']::-webkit-calendar-picker-indicator {
+  background: url('../../../public/clock.svg') no-repeat;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.35rem;
+  background: linear-gradient(to right, #007bff var(--value), #fff var(--value))
+    no-repeat;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff; /* Blue color for the thumb */
+  cursor: pointer;
+}
+
+/* Firefox */
+input[type='range']::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff; /* Blue color for the thumb */
+  cursor: pointer;
+}
+
+/* Webkit */
+input[type='range']::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff; /* Blue color for the thumb */
+  cursor: pointer;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+/* For Chrome and Safari */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px black inset !important;
+  -webkit-border-radius: 10px;
+  -webkit-text-fill-color: white !important;
+  /* Change 'white' to your desired background color */
+}
+
+/* For Firefox */
+input:-moz-autofill {
+  -moz-box-shadow: 0 0 0 1000px black inset !important; /* Change 'white' to your desired background color */
+  -moz-border-radius: 10px;
+  -moz-text-decoration-color: white !important;
+}
+
+/* Reset default autofill styles */
+input:-webkit-autofill,
+input:-moz-autofill {
+  background-color: transparent; /* Reset to transparent to avoid browser default styles */
+}
